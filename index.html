@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Dulces Tradicionales de Calcehtok Yucatán</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-candy-cane"></i>
+            <h1>Dulces Tradicionales de Calcehtok</h1>
+        </div>
+        
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+       <nav class="nav-lateral" id="navLateral">
+    <div class="nav-header">
+        <h3>Menú</h3>
+        <div class="nav-close" id="navClose">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#dulces">Dulces</a></li>
+        <li><a href="#siembra">Siembra y Cosecha</a></li>
+        <li><a href="#seleccion-natural">Selección Natural</a></li>
+        <li><a href="#adaptabilidad">Adaptabilidad</a></li>
+        <li><a href="#comprension-historica">Historia</a></li>
+        <li><a href="#infografia">Infografía</a></li>
+        <li><a href="#tabla-grafica">Tabla y Gráfica</a></li>
+        <li><a href="#tecnologia">Tecnología</a></li>
+        <li><a href="#trabajo-equipo">Equipo</a></li>
+        <li><a href="#impacto-internet">Internet</a></li>
+        <li><a href="#compromiso">Compromiso</a></li>
+        <li><a href="#desarrollo-sustentable">Sustentable</a></li>
+        <li><a href="#consumo-responsable">Consumo</a></li>
+        <li><a href="#analisis-recursos">Recursos</a></li>
+        <li><a href="#aplicacion-conocimientos">Conocimientos</a></li>
+        <li><a href="#derechos-artesanos">Derechos</a></li>
+        <li><a href="#artesanos">Artesanos</a></li>
+        <li><a href="#patrimonio-cultural">Patrimonio</a></li>
+    </ul>
+</nav>
+        
+        <div class="overlay" id="overlay"></div>
+    </div>
+</header>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Dulces Tradicionales de Yucatán</h2>
+                <p>Los dulces tradicionales de Yucatán forman parte de la identidad y la cultura de la región. Elaborados con ingredientes naturales y recetas transmitidas de generación en generación, conservan los sabores que han acompañado a las familias yucatecas durante muchos años.</p>
+                <p>Entre ellos destacan el dulce de nance, conocido por su sabor dulce y aroma característico; el dulce de ciruela, apreciado por su textura suave y su delicioso sabor; el dulce de camote, preparado de manera artesanal y muy popular en la gastronomía local; y el dulce de ciricote, una tradición que refleja la riqueza de los frutos de la región.</p>
+                <p>En esta página podrás conocer más sobre su historia, preparación e importancia cultural, así como el valor que tienen para preservar las tradiciones de Yucatán.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección de Dulces -->
+<section id="dulces" class="dulces">
+    <div class="container">
+        <h2 class="section-title">Dulces Tradicionales</h2>
+        <div class="dulces-grid">
+            
+          <!-- Tarjeta 1: Dulce de Nance -->
+<div class="tarjeta">
+    <div class="tarjeta-imagen" data-modal-foto="modalFotoNance">
+        <img src="img/dulces/Nance.jpeg" alt="Dulce de Nance">
+    </div>
+    <h3>Dulce de Nance</h3>
+    <p class="maya"><i class="fas fa-language"></i> Maya: Ch'ujuk Chi'</p>
+    <p class="descripcion">El dulce de nance se prepara con frutos maduros cocidos con azúcar. Su sabor único y su elaboración artesanal forman parte de las tradiciones gastronómicas de Calcehtok.</p>
+    <button class="btn-receta" data-modal-receta="modalRecetaNance"><i class="fas fa-book-open"></i> Ver receta</button>
+</div>
+
+<!-- Tarjeta 2: Dulce de Camote -->
+<div class="tarjeta">
+    <div class="tarjeta-imagen" data-modal-foto="modalFotoCamote">
+        <img src="img/dulces/Camote.jpeg" alt="Dulce de Camote">
+    </div>
+    <h3>Dulce de Camote</h3>
+    <p class="maya"><i class="fas fa-language"></i> Maya: Ch'ujuk Is</p>
+    <p class="descripcion">El dulce de camote es una receta tradicional elaborada con camote y azúcar. Su sabor dulce y textura suave lo convierten en uno de los postres más representativos de la comunidad.</p>
+    <button class="btn-receta" data-modal-receta="modalRecetaCamote"><i class="fas fa-book-open"></i> Ver receta</button>
+</div>
+
+<!-- Tarjeta 3: Dulce de Ciruela -->
+<div class="tarjeta">
+    <div class="tarjeta-imagen" data-modal-foto="modalFotoCiruela">
+        <img src="img/dulces/Ciruela.jpeg" alt="Dulce de Ciruela">
+    </div>
+    <h3>Dulce de Ciruela</h3>
+    <p class="maya"><i class="fas fa-language"></i> Maya: Ch'ujuk Abal</p>
+    <p class="descripcion">El dulce de ciruela destaca por su delicioso sabor y aroma natural. Se elabora con ciruelas cocidas cuidadosamente para conservar las características de esta fruta tradicional.</p>
+    <button class="btn-receta" data-modal-receta="modalRecetaCiruela"><i class="fas fa-book-open"></i> Ver receta</button>
+</div>
+
+<!-- Tarjeta 4: Dulce de Ciricote -->
+<div class="tarjeta">
+    <div class="tarjeta-imagen" data-modal-foto="modalFotoCiricote">
+        <img src="img/dulces/Ciricote.jpeg" alt="Dulce de Ciricote">
+    </div>
+    <h3>Dulce de Ciricote</h3>
+    <p class="maya"><i class="fas fa-language"></i> Maya: Ch'ujuk K'oopte</p>
+    <p class="descripcion">El dulce de ciricote es una preparación típica hecha con el fruto del ciricote y azúcar. Es una receta transmitida de generación en generación que forma parte del patrimonio cultural de la región.</p>
+    <button class="btn-receta" data-modal-receta="modalRecetaCiricote"><i class="fas fa-book-open"></i> Ver receta</button>
+</div>
+    </div>
+</section>
+
+<!-- Sección Siembra y Cosecha -->
+<section id="siembra" class="siembra">
+    <div class="container">
+        <h2 class="section-title">Siembra y Cosecha</h2>
+        <div class="siembra-grid">
+            
+            <div class="siembra-card">
+                <div class="siembra-imagen">
+                    <img src="img/siembra/siembra-nance.jpeg" alt="Siembra de Nance">
+                </div>
+                <h3><i class="fas fa-seedling"></i> Nance</h3>
+                <div class="siembra-info">
+                    <p><strong>Siembra:</strong> Noviembre - Diciembre</p>
+                    <p><strong>Cosecha:</strong> Abril, Mayo, Junio y Julio</p>
+                    <p><strong>Tiempo en cosechar:</strong> 3-5 años</p>
+                    <p><strong>Método de siembra:</strong> El nance se siembra por semilla o mediante plantas de vivero. En Yucatán se recomienda sembrarlo al inicio de la temporada de lluvias. Primero se germinan las semillas y, cuando la planta alcanza entre 30 y 50 cm de altura, se trasplanta a un hoyo de aproximadamente 40 × 40 × 40 cm con tierra mezclada con abono orgánico.</p>
+                </div>
+            </div>
+
+            <div class="siembra-card">
+                <div class="siembra-imagen">
+                    <img src="img/siembra/siembra-camote.jpeg" alt="Siembra de Camote">
+                </div>
+                <h3><i class="fas fa-carrot"></i> Camote</h3>
+                <div class="siembra-info">
+                    <p><strong>Siembra:</strong> Mayo - Junio</p>
+                    <p><strong>Cosecha:</strong> Septiembre, Octubre, Noviembre y Diciembre</p>
+                    <p><strong>Tiempo en cosechar:</strong> 3-6 meses</p>
+                    <p><strong>Método de siembra:</strong> El camote se siembra con trozos de tallo llamados esquejes. Estos se plantan a una profundidad de 10 a 15 cm y con una separación de 30 a 40 cm entre cada planta. Durante su crecimiento se debe regar regularmente, quitar las hierbas y cuidar la planta de plagas. Después de varios meses, cuando las hojas se ponen amarillas, el camote está listo para cosecharse.</p>
+                </div>
+            </div>
+
+            <div class="siembra-card">
+                <div class="siembra-imagen">
+                    <img src="img/siembra/siembra-ciricote.jpeg" alt="Siembra de Ciricote">
+                </div>
+                <h3><i class="fas fa-tree"></i> Ciricote</h3>
+                <div class="siembra-info">
+                    <p><strong>Siembra:</strong> Mayo, Junio y Julio</p>
+                    <p><strong>Cosecha:</strong> Agosto - Septiembre</p>
+                    <p><strong>Tiempo en cosechar:</strong> 4-6 años</p>
+                    <p><strong>Método de siembra:</strong> El ciricote se siembra por semilla. Las semillas se colocan primero en bolsas de vivero y, cuando la planta alcanza un tamaño adecuado, se trasplanta al terreno definitivo en un hoyo de aproximadamente 40 × 40 × 40 cm. Es una especie nativa de la Península de Yucatán.</p>
+                </div>
+            </div>
+
+            <div class="siembra-card">
+                <div class="siembra-imagen">
+                    <img src="img/siembra/siembra-ciruela.jpeg" alt="Siembra de Ciruela">
+                </div>
+                <h3><i class="fas fa-apple-alt"></i> Ciruela</h3>
+                <div class="siembra-info">
+                    <p><strong>Siembra:</strong> Noviembre - Diciembre</p>
+                    <p><strong>Cosecha:</strong> Marzo, Abril, Mayo y Junio</p>
+                    <p><strong>Tiempo de cosecha:</strong> 2-4 años</p>
+                    <p><strong>Método de siembra:</strong> La ciruela se propaga principalmente por estacas o injertos. Se prepara un hoyo de aproximadamente 50 × 50 × 50 cm, se coloca la estaca o planta y se cubre con tierra abonada. Es un árbol que se adapta bien al clima de Yucatán y comienza a producir.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Selección Natural -->
+<section id="seleccion-natural" class="seleccion-natural">
+    <div class="container">
+        <h2 class="section-title">Comprensión de la Selección Natural</h2>
+        <div class="seleccion-grid">
+            
+            <div class="seleccion-card">
+                <h3><i class="fas fa-carrot"></i> Dulce de Camote</h3>
+                <p>El camote ha desarrollado características que favorecen su supervivencia, como su capacidad para almacenar nutrientes en la raíz y resistir periodos de sequía. Estas características han permitido que la especie se adapte y continúe reproduciéndose en diferentes ambientes.</p>
+            </div>
+
+            <div class="seleccion-card">
+                <h3><i class="fas fa-apple-alt"></i> Dulce de Ciruela</h3>
+                <p>La ciruela yucateca posee rasgos que favorecen su reproducción, como frutos atractivos para animales que dispersan sus semillas. Estas características han contribuido a su permanencia en los ecosistemas locales.</p>
+            </div>
+
+            <div class="seleccion-card">
+                <h3><i class="fas fa-tree"></i> Dulce de Ciricote</h3>
+                <p>El ciricote presenta características que favorecen su supervivencia, como su resistencia a las altas temperaturas y su capacidad para desarrollarse en suelos de la península. Estos rasgos han permitido la permanencia de la especie.</p>
+            </div>
+
+            <div class="seleccion-card">
+                <h3><i class="fas fa-fruit-apple"></i> Dulce de Nance</h3>
+                <p>El nance posee características que favorecen su supervivencia y reproducción, como su capacidad para crecer en climas cálidos y producir abundantes frutos. Estos rasgos han permitido que la especie se mantenga ampliamente distribuida en la región.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Adaptabilidad -->
+<section id="adaptabilidad" class="adaptabilidad">
+    <div class="container">
+        <h2 class="section-title">Adaptabilidad</h2>
+        <div class="adaptabilidad-grid">
+            
+            <div class="adaptabilidad-card">
+                <h3><i class="fas fa-carrot"></i> Dulce de Camote</h3>
+                <p>La producción de camote presenta variabilidad en tamaño, color y sabor. Estas diferencias han permitido que algunas variedades se adapten mejor a las condiciones del suelo y clima de Yucatán, favoreciendo su cultivo y aprovechamiento en la elaboración de dulces tradicionales.</p>
+            </div>
+
+            <div class="adaptabilidad-card">
+                <h3><i class="fas fa-apple-alt"></i> Dulce de Ciruela</h3>
+                <p>La variabilidad genética de la ciruela permite que algunos árboles produzcan frutos con diferentes tamaños y sabores. Estas características han facilitado su adaptación al clima cálido de Yucatán y su aprovechamiento para la elaboración de dulces.</p>
+            </div>
+
+            <div class="adaptabilidad-card">
+                <h3><i class="fas fa-tree"></i> Dulce de Ciricote</h3>
+                <p>Las diferentes características de sus frutos y semillas han favorecido su adaptación al entorno local. Esta variabilidad ha permitido que el ciricote continúe siendo una especie aprovechada por las comunidades para la elaboración de dulces tradicionales.</p>
+            </div>
+
+            <div class="adaptabilidad-card">
+                <h3><i class="fas fa-fruit-apple"></i> Dulce de Nance</h3>
+                <p>La variabilidad en los frutos del nance ha permitido que la especie se adapte a diferentes condiciones ambientales. Gracias a estas características, continúa siendo una planta importante para la elaboración de dulces tradicionales yucatecos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Comprensión Histórica -->
+<section id="comprension-historica" class="comprension-historica">
+    <div class="container">
+        <h2 class="section-title">Comprensión Histórica</h2>
+        <div class="historica-grid">
+            
+            <div class="historica-card">
+                <h3><i class="fas fa-carrot"></i> Dulce de Camote</h3>
+                <p>Desde tiempos prehispánicos, el camote ha sido un alimento importante en la región. Con el paso del tiempo, su uso evolucionó hasta convertirse en ingrediente principal de dulces típicos que forman parte de la gastronomía yucateca actual.</p>
+            </div>
+
+            <div class="historica-card">
+                <h3><i class="fas fa-apple-alt"></i> Dulce de Ciruela</h3>
+                <p>La ciruela ha sido utilizada durante generaciones en la preparación de conservas y dulces artesanales. Su aprovechamiento ha pasado de ser una práctica familiar a formar parte del patrimonio gastronómico de la región.</p>
+            </div>
+
+            <div class="historica-card">
+                <h3><i class="fas fa-tree"></i> Dulce de Ciricote</h3>
+                <p>El ciricote ha sido valorado desde hace muchos años por sus frutos comestibles. Su uso en la preparación de dulces representa la conservación de conocimientos y tradiciones transmitidas entre generaciones.</p>
+            </div>
+
+            <div class="historica-card">
+                <h3><i class="fas fa-fruit-apple"></i> Dulce de Nance</h3>
+                <p>El nance forma parte de la cultura alimentaria de Yucatán desde hace generaciones. Su transformación en dulces y conservas demuestra la evolución de las prácticas culinarias locales y la preservación de las tradiciones regionales.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Infografía -->
+<section id="infografia" class="infografia">
+    <div class="container">
+        <h2 class="section-title">Infografía</h2>
+        <div class="infografia-contenido">
+            <img src="img/infografia.jpeg" alt="Infografía de dulces tradicionales de Yucatán">
+        </div>
+    </div>
+</section>
+<!-- Sección: Tabla y Gráfica (Uso de Leña) -->
+<section id="tabla-grafica" class="tabla-grafica">
+    <div class="container">
+        <h2 class="section-title">Uso de Leña en la Elaboración de Dulces</h2>
+        
+        <div class="tabla-container">
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>X (Días)</th>
+                        <th>Y = Leña</th>
+                        <th>Coordenada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>8</td>
+                        <td>(1, 8)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>(2, 6)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>(3, 5)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="grafica-container">
+            <div class="grafica-titulo">
+                <h3>Gráfica: Consumo de Leña por Día</h3>
+            </div>
+            <div class="grafica-imagen">
+                <img src="img/grafica-leña.jpeg" alt="Gráfica de consumo de leña">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Uso de tecnología y cuidado del ambiente -->
+<section id="tecnologia" class="tecnologia">
+    <div class="container">
+        <h2 class="section-title">Uso de la Tecnología y Cuidado del Ambiente</h2>
+        <div class="tecnologia-contenido">
+            <p>La tecnología nos ayudó a difundir los dulces tradicionales de nance, ciricote, ciruela y camote mediante redes sociales, páginas web y códigos QR. Gracias a estas herramientas, más personas pueden conocer su historia, ingredientes y forma de preparación. Además, reflexionamos sobre la importancia de utilizar empaques reciclables y de aprovechar ingredientes locales para reducir el impacto ambiental y apoyar la producción sostenible de nuestra comunidad.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Trabajo en equipo y respeto cultural -->
+<section id="trabajo-equipo" class="trabajo-equipo">
+    <div class="container">
+        <h2 class="section-title">Trabajo en Equipo y Respeto Cultural</h2>
+        <div class="trabajo-contenido">
+            <p>Durante el proyecto trabajamos de manera colaborativa, respetando las opiniones e ideas de cada integrante. También valoramos la diversidad cultural de Calcehtok al investigar y compartir los conocimientos relacionados con la elaboración de los dulces tradicionales. Esta experiencia fortaleció la responsabilidad, el diálogo y el respeto hacia las tradiciones que forman parte de nuestra identidad.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Impacto del internet y las redes sociales -->
+<section id="impacto-internet" class="impacto-internet">
+    <div class="container">
+        <h2 class="section-title">Impacto del Internet y las Redes Sociales</h2>
+        <div class="impacto-contenido">
+            <p>El internet y las redes sociales han cambiado la forma en que las personas conocen los dulces tradicionales. Mediante los códigos QR, cualquier persona puede acceder fácilmente a información sobre los dulces de nance, ciricote, ciruela y camote, conocer su importancia cultural y aprender sobre su elaboración. Esto permite que las tradiciones locales lleguen a más personas, generando interés, valoración y oportunidades para fortalecer la economía de la comunidad.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Compromiso con la comunidad -->
+<section id="compromiso" class="compromiso">
+    <div class="container">
+        <h2 class="section-title">Compromiso con la Comunidad</h2>
+        <div class="compromiso-contenido">
+            <p>Como estudiante de bachillerato, me siento orgullosa de contribuir a la conservación de los dulces tradicionales de Calcehtok. Este proyecto promueve el bien común al rescatar conocimientos transmitidos por generaciones y reconocer el trabajo de las familias que elaboran estos productos. También fomenta la inclusión, la igualdad de género y el respeto por las personas que mantienen vivas estas tradiciones, ayudando a preservar nuestro patrimonio cultural para las futuras generaciones.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Desarrollo Sustentable -->
+<section id="desarrollo-sustentable" class="desarrollo-sustentable">
+    <div class="container">
+        <h2 class="section-title">Desarrollo Sustentable en la Elaboración de los Dulces</h2>
+        <div class="sustentable-contenido">
+            <p>Los dulces tradicionales de nance, ciricote, ciruela y camote forman parte del patrimonio cultural de Calcehtok. Su elaboración promueve el desarrollo sustentable mediante el uso responsable de ingredientes locales, el aprovechamiento adecuado del agua y la leña, y la reducción de desperdicios. Además, su producción fortalece la economía de las familias de la comunidad y contribuye a preservar las tradiciones para las futuras generaciones.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Consumo Responsable vs Consumismo -->
+<section id="consumo-responsable" class="consumo-responsable">
+    <div class="container">
+        <h2 class="section-title">Consumo responsable vs Consumismo</h2>
+        <p class="seccion-subtitulo">(Relación con los Dulces Tradicionales)</p>
+        
+        <div class="consumo-grid">
+            <!-- Tarjeta Consumo Responsable -->
+            <div class="consumo-card responsable">
+                <div class="consumo-icon">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <h3>Consumo Responsable</h3>
+                <p>El consumo responsable consiste en comprar y consumir solo lo necesario, valorando la calidad, el origen de los productos y el trabajo de quienes los elaboran.</p>
+                <p>En el caso de los dulces tradicionales de nance, ciricote, ciruela y camote, el consumo responsable ayuda a apoyar a los productores de la comunidad y a conservar estas recetas tradicionales.</p>
+            </div>
+
+            <!-- Tarjeta Consumismo -->
+            <div class="consumo-card consumismo">
+                <div class="consumo-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3>Consumismo</h3>
+                <p>El consumismo es la compra excesiva de productos sin una necesidad real, lo que puede generar desperdicio y afectar las tradiciones locales.</p>
+                <p>El consumismo suele favorecer productos industrializados, lo que puede disminuir el interés por los dulces tradicionales y poner en riesgo su permanencia en la comunidad.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección: Uso y Análisis de los Recursos -->
+<section id="analisis-recursos" class="analisis-recursos">
+    <div class="container">
+        <h2 class="section-title">Uso y Análisis de los Recursos</h2>
+        <div class="analisis-contenido">
+            <p>Durante la elaboración de los dulces se analizaron los recursos utilizados, como el agua y la leña empleados en el proceso de cocción. Esta información permitió identificar formas de aprovechar mejor los recursos disponibles, reduciendo el desperdicio sin afectar el sabor ni la calidad de los productos. El análisis también ayudó a comprender la importancia del cuidado del medio ambiente en las actividades tradicionales.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Aplicación de Conocimientos y Relación con la Geografía (NUEVA VERSIÓN) -->
+<section id="aplicacion-conocimientos" class="aplicacion-conocimientos">
+    <div class="container">
+        <h2 class="section-title">Aplicación de Conocimientos y Responsabilidad Social</h2>
+        
+        <div class="frutas-geo-grid">
+            
+            <div class="fruta-geo-card">
+                <h3><i class="fas fa-fruit-apple"></i> Nance</h3>
+                <p>El nance es un fruto que crece en zonas cálidas de Yucatán, incluyendo comunidades como Calcehtok. Tradicionalmente se recolecta de árboles silvestres o cultivados durante su temporada de cosecha. Con este fruto se elaboran dulces, conservas y jarabes que forman parte de la gastronomía local. Su aprovechamiento ayuda a conservar las costumbres y conocimientos transmitidos de generación en generación.</p>
+            </div>
+
+            <div class="fruta-geo-card">
+                <h3><i class="fas fa-carrot"></i> Camote</h3>
+                <p>El camote se cultiva en terrenos agrícolas de la región y es un ingrediente importante en la preparación de dulces tradicionales. Su producción depende de las características del suelo y del clima de Yucatán. La elaboración de dulces de camote representa una tradición que aprovecha los recursos locales y fortalece la identidad cultural de la comunidad.</p>
+            </div>
+
+            <div class="fruta-geo-card">
+                <h3><i class="fas fa-apple-alt"></i> Ciruela</h3>
+                <p>La ciruela yucateca crece en huertos familiares y áreas rurales. Durante la temporada de cosecha, los frutos se recolectan para consumirlos frescos o para preparar dulces, mermeladas y conservas. Esta práctica forma parte de las tradiciones alimentarias de la región y contribuye a preservar el patrimonio cultural de Calcehtok.</p>
+            </div>
+
+            <div class="fruta-geo-card">
+                <h3><i class="fas fa-tree"></i> Ciricote</h3>
+                <p>El ciricote es un árbol nativo de la Península de Yucatán. Sus frutos son recolectados por las comunidades locales y utilizados en la elaboración de dulces artesanales. El aprovechamiento de este recurso natural refleja la relación entre la población y su entorno geográfico, además de promover la conservación de especies propias de la región.</p>
+            </div>
+        </div>
+
+        <div class="relacion-geografia">
+            <h3><i class="fas fa-map-marker-alt"></i> Relación con la geografía</h3>
+            <p>La elaboración de dulces tradicionales de nance, camote, ciruela y ciricote está vinculada a las condiciones geográficas de Yucatán, como su clima cálido, sus suelos y la vegetación característica de la región. Estos factores permiten el crecimiento de los frutos que sirven como materia prima para la producción de dulces artesanales, contribuyendo a mantener las tradiciones y la identidad cultural de Calcehtok.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Derechos de los Artesanos -->
+<section id="derechos-artesanos" class="derechos-artesanos">
+    <div class="container">
+        <h2 class="section-title">Derechos de los Artesanos</h2>
+        <div class="derechos-grid">
+            
+            <div class="derecho-card">
+                <div class="derecho-imagen">
+                    <img src="img/derechos/pago-justo.jpeg" alt="Pago justo">
+                </div>
+                <div class="derecho-contenido">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <p>Derecho a recibir un pago justo por su trabajo.</p>
+                </div>
+            </div>
+
+            <div class="derecho-card">
+                <div class="derecho-imagen">
+                    <img src="img/derechos/conservar-conocimientos.jpeg" alt="Conservar conocimientos">
+                </div>
+                <div class="derecho-contenido">
+                    <i class="fas fa-brain"></i>
+                    <p>Derecho a conservar y proteger sus diseños y conocimientos tradicionales.</p>
+                </div>
+            </div>
+
+            <div class="derecho-card">
+                <div class="derecho-imagen">
+                    <img src="img/derechos/vender-sin-discriminacion.jpeg" alt="Vender sin discriminación">
+                </div>
+                <div class="derecho-contenido">
+                    <i class="fas fa-balance-scale"></i>
+                    <p>Derecho a vender sus artesanías sin discriminación.</p>
+                </div>
+            </div>
+
+            <div class="derecho-card">
+                <div class="derecho-imagen">
+                    <img src="img/derechos/condiciones-seguras.jpeg" alt="Condiciones seguras">
+                </div>
+                <div class="derecho-contenido">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Derecho a trabajar en condiciones seguras y dignas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Historia de los Artesanos -->
+<section id="artesanos" class="artesanos">
+    <div class="container">
+        <h2 class="section-title">Historia de los Artesanos de Nuestra Comunidad</h2>
+        <div class="artesanos-grid">
+            
+            <div class="artesano-card">
+                <div class="artesano-imagen">
+                    <img src="img/artesanos/maria-guadalupe.jpeg" alt="María Guadalupe Dzul Uk">
+                </div>
+                <div class="artesano-info">
+                    <h3>María Guadalupe Dzul Uk</h3>
+                    <p class="artesano-edad">56 años | Originaria de Campeche</p>
+                    <p>Llegó a vivir a Calcehtok mientras vendía sombreros, hamacas y dulces tradicionales. Aprendió a elaborar dulces observando a su madre y actualmente cuenta con más de 20 años de experiencia preparando dulces tradicionales.</p>
+                </div>
+            </div>
+
+                <!-- Artesano 2: María Leticia Aldana Calan -->
+                <div class="artesano-card">
+                    <div class="artesano-imagen">
+                        <img src="img/artesanos/maria-leticia.jpeg" alt="María Leticia Aldana Calan">
+                    </div>
+                    <div class="artesano-info">
+                        <h3>María Leticia Aldana Calan</h3>
+                        <p class="artesano-edad">45 años | Originaria de Opichén | Reside en Calcehtok desde hace 29 años</p>
+                        <p>Aprendió la elaboración del dulce de camote desde su infancia; a la edad de 13 años comenzó a colaborar con su abuela en su preparación. Inicialmente, la receta se destinaba exclusivamente al consumo familiar, pero con el tiempo se convirtió también en una fuente de sustento económico para su hogar, conservando así esta tradición.</p>
+                    </div>
+                </div>
+
+            <div class="artesano-card">
+                <div class="artesano-imagen">
+                    <img src="img/artesanos/eneyda-colonia.jpeg" alt="Eneyda del Socorro Colonia González">
+                </div> 
+                <div class="artesano-info">
+                    <h3>Eneyda del Socorro Colonia González</h3>
+                    <p class="artesano-edad">63 años | Originaria de Calcehtok</p>
+                    <p>Aprendí a elaborar el dulce de ciruela a los 15 años gracias a mi abuelita paterna, quien me enseñó la receta tradicional de nuestra familia. Comencé a prepararlo para venderlo y, con los años, se convirtió en una tradición que conservo con orgullo. Para mí, este dulce representa nuestras raíces y la importancia de preservar nuestras costumbres.</p>
+                </div>
+            </div>
+
+            <div class="artesano-card">
+                <div class="artesano-imagen">
+                    <img src="img/artesanos/miriam-tec.jpeg" alt="Miriam Guadalupe Tec Estrella">
+                </div>
+                <div class="artesano-info">
+                    <h3>Miriam Guadalupe Tec Estrella</h3>
+                    <p class="artesano-edad">47 años | Originaria de Opichén</p>
+                    <p>Aprendió a elaborar el dulce de ciricote hace 10 años gracias a su mamá, quien le enseñó como lo preparaba su abuela. Esta receta es algo que se elaboraba solo para consumo de su familia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección: Nuestro Patrimonio Cultural -->
+<section id="patrimonio-cultural" class="patrimonio-cultural">
+    <div class="container">
+        <h2 class="section-title">Nuestro Patrimonio Cultural</h2>
+        <div class="patrimonio-contenido">
+            <p>Salvaguardar nuestras tradiciones y nuestro patrimonio cultural es fundamental porque nos permite conservar la identidad, la historia y los conocimientos que han pasado de generación en generación. En el caso de los dulces tradicionales de nuestra comunidad, estos no son solo alimentos, sino expresiones culturales que reflejan nuestras costumbres, ingredientes locales, técnicas artesanales y formas de convivencia.</p>
+            <p>Al preservar la elaboración y el consumo de estos dulces, mantenemos vivas las enseñanzas de nuestros antepasados y fortalecemos el sentido de pertenencia entre los habitantes de la comunidad. Además, las tradiciones gastronómicas pueden impulsar el turismo, apoyar a los productores locales y generar oportunidades económicas.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Importancia Cultural -->
+<section id="historia" class="historia">
+    <div class="container">
+        <h2 class="section-title">Importancia Cultural</h2>
+        <div class="historia-content">
+            <p>En esta página podrás conocer más sobre su historia, preparación e importancia cultural, así como el valor que tienen para preservar las tradiciones de Yucatán. Cada dulce representa una conexión con las raíces mayas y el amor por los ingredientes naturales de la región.</p>
+            <p>Calcehtok es una comunidad que ha sabido conservar estas recetas, transmitiéndolas de abuelas a nietas, manteniendo vivo el sabor de la identidad yucateca.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <i class="fas fa-heart"></i>
+                <p>Dulces Tradicionales de Calcehtok Yucatán</p>
+                <p>Calcehtok, Yucatán, México</p>
+            </div>
+            <div class="footer-derechos">
+                <p>Todos los derechos reservados</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ========== MODALES ========== -->
+ <!-- ========== MODALES DE RECETAS ========== -->
+
+<!-- Modal Receta Nance -->
+<div id="modalRecetaNance" class="modal">
+    <div class="modal-contenido modal-receta">
+        <div class="modal-header">
+            <h3><i class="fas fa-utensils"></i> Receta: Dulce de Nance</h3>
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="receta-ingredientes">
+                <h4><i class="fas fa-list"></i> Ingredientes:</h4>
+                <ul>
+                    <li>Nance</li>
+                    <li>Azúcar</li>
+                    <li>Agua</li>
+                    <li>Canela (opcional)</li>
+                </ul>
+            </div>
+            <div class="receta-preparacion">
+                <h4><i class="fas fa-step-forward"></i> Modo de preparación:</h4>
+                <ol>
+                    <li>Lavar bien los nances para quitar cualquier suciedad.</li>
+                    <li>Colocar los nances en una olla con las 2 tazas de agua.</li>
+                    <li>Agregar el azúcar y la rama de canela.</li>
+                    <li>Cocinar a fuego medio hasta que los nances estén suaves.</li>
+                    <li>Continuar hirviendo hasta que el líquido se convierta en un almíbar espeso.</li>
+                    <li>Retirar del fuego y dejar enfriar.</li>
+                    <li>Servir y disfrutar.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Receta Camote -->
+<div id="modalRecetaCamote" class="modal">
+    <div class="modal-contenido modal-receta">
+        <div class="modal-header">
+            <h3><i class="fas fa-utensils"></i> Receta: Dulce de Camote</h3>
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="receta-ingredientes">
+                <h4><i class="fas fa-list"></i> Ingredientes:</h4>
+                <ul>
+                    <li>Camote</li>
+                    <li>Azúcar</li>
+                    <li>Canela</li>
+                    <li>Agua</li>
+                </ul>
+            </div>
+            <div class="receta-preparacion">
+                <h4><i class="fas fa-step-forward"></i> Modo de preparación:</h4>
+                <ol>
+                    <li>Cocer los camotes hasta que estén suaves.</li>
+                    <li>Pelarlos y cortarlos en rodajas.</li>
+                    <li>Cocinarlos junto con azúcar, canela y un poco de agua.</li>
+                    <li>Esperar algunos días para terminar la cocción.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Receta Ciruela -->
+<div id="modalRecetaCiruela" class="modal">
+    <div class="modal-contenido modal-receta">
+        <div class="modal-header">
+            <h3><i class="fas fa-utensils"></i> Receta: Dulce de Ciruela</h3>
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="receta-ingredientes">
+                <h4><i class="fas fa-list"></i> Ingredientes:</h4>
+                <ul>
+                    <li>Ciruelas</li>
+                    <li>Azúcar</li>
+                    <li>Agua</li>
+                    <li>Canela (opcional)</li>
+                </ul>
+            </div>
+            <div class="receta-preparacion">
+                <h4><i class="fas fa-step-forward"></i> Modo de preparación:</h4>
+                <ol>
+                    <li>Lava bien las ciruelas.</li>
+                    <li>Colócalas en una olla con agua y cocina hasta que estén suaves.</li>
+                    <li>Agrega el azúcar y la canela.</li>
+                    <li>Cocina a fuego lento, moviendo ocasionalmente, hasta que se forme un almíbar espeso.</li>
+                    <li>Retira del fuego y deja enfriar.</li>
+                    <li>Conserva en recipientes limpios o sirve al gusto.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Receta Ciricote -->
+<div id="modalRecetaCiricote" class="modal">
+    <div class="modal-contenido modal-receta">
+        <div class="modal-header">
+            <h3><i class="fas fa-utensils"></i> Receta: Dulce de Ciricote</h3>
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="receta-ingredientes">
+                <h4><i class="fas fa-list"></i> Ingredientes:</h4>
+                <ul>
+                    <li>Ciricotes maduros</li>
+                    <li>Azúcar</li>
+                    <li>Agua</li>
+                    <li>Canela (opcional)</li>
+                </ul>
+            </div>
+            <div class="receta-preparacion">
+                <h4><i class="fas fa-step-forward"></i> Modo de elaboración:</h4>
+                <ol>
+                    <li>Lava bien los ciricotes.</li>
+                    <li>Colócalos en una olla con agua y hiérvelos hasta que estén suaves.</li>
+                    <li>Agrega el azúcar y la canela.</li>
+                    <li>Cocina a fuego lento, moviendo ocasionalmente, hasta que se forme un almíbar espeso.</li>
+                    <li>Retira del fuego y deja enfriar.</li>
+                    <li>Conserva en recipientes limpios o sirve al gusto.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ========== MODALES DE FOTOS (IMÁGENES GRANDES) ========== -->
+
+<div id="modalFotoNance" class="modal modal-foto">
+    <div class="modal-contenido-foto">
+        <span class="modal-close-foto">&times;</span>
+        <img src="img/dulces/Nance.jpeg" alt="Dulce de Nance">
+    </div>
+</div>
+
+<div id="modalFotoCamote" class="modal modal-foto">
+    <div class="modal-contenido-foto">
+        <span class="modal-close-foto">&times;</span>
+        <img src="img/dulces/Camote.jpeg" alt="Dulce de Camote">
+    </div>
+</div>
+
+<div id="modalFotoCiruela" class="modal modal-foto">
+    <div class="modal-contenido-foto">
+        <span class="modal-close-foto">&times;</span>
+        <img src="img/dulces/Ciruela.jpeg" alt="Dulce de Ciruela">
+    </div>
+</div>
+
+<div id="modalFotoCiricote" class="modal modal-foto">
+    <div class="modal-contenido-foto">
+        <span class="modal-close-foto">&times;</span>
+        <img src="img/dulces/Ciricote.jpeg" alt="Dulce de Ciricote">
+    </div>
+</div>
+
+<div id="modalPagoJusto" class="modal">
+    <div class="modal-contenido">
+        <div class="modal-header">
+            <h3><i class="fas fa-hand-holding-usd"></i> Derecho al Pago Justo</h3>
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Los artesanos tienen derecho a recibir una remuneración justa y equitativa por su trabajo, que reconozca el valor cultural y tradicional de sus productos, así como el tiempo y esfuerzo invertidos en cada pieza elaborada.</p>
+            <p>Este derecho es fundamental para garantizar que las tradiciones artesanales puedan mantenerse vivas y transmitirse a las nuevas generaciones.</p>
+        </div>
+    </div>
+</div>
+
+<div id="modalConservar" class="modal">
+    <div class="modal-contenido">
+        <div class="modal-header">
+            <h3><i class="fas fa-brain"></i> Derecho a Conservar Conocimientos</h3>
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Los artesanos tienen derecho a preservar, proteger y transmitir sus conocimientos tradicionales, técnicas ancestrales y diseños únicos que forman parte del patrimonio cultural de la comunidad.</p>
+            <p>Estos conocimientos representan la identidad y la historia de generaciones enteras que han dedicado su vida a mantener vivas estas tradiciones.</p>
+        </div>
+    </div>
+</div>
+
+<div id="modalNoDiscriminacion" class="modal">
+    <div class="modal-contenido">
+        <div class="modal-header">
+            <h3><i class="fas fa-balance-scale"></i> Derecho a Vender sin Discriminación</h3>
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Los artesanos tienen derecho a comercializar sus productos en igualdad de condiciones, sin ser discriminados por su origen, género, edad o cualquier otra condición, garantizando el acceso a mercados justos.</p>
+            <p>La venta sin discriminación asegura que todos los artesanos puedan desarrollarse económicamente y mantener sus tradiciones como fuente de sustento.</p>
+        </div>
+    </div>
+</div>
+
+<div id="modalCondicionesSeguras" class="modal">
+    <div class="modal-contenido">
+        <div class="modal-header">
+            <h3><i class="fas fa-shield-alt"></i> Derecho a Condiciones Seguras</h3>
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Los artesanos tienen derecho a trabajar en entornos seguros y dignos, con las condiciones necesarias para proteger su salud e integridad física durante la elaboración de sus productos.</p>
+            <p>Un ambiente de trabajo seguro permite que los artesanos puedan desarrollar su labor con tranquilidad y bienestar, garantizando la calidad de sus productos.</p>
+        </div>
+    </div>
+</div>
+
+<div id="modalMariaGuadalupe" class="modal">
+    <div class="modal-contenido">
+        <div class="modal-header">
+            <h3><i class="fas fa-user"></i> María Guadalupe Dzul Uk</h3>
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="modal-imagen">
+                <img src="img/artesanos/maria-guadalupe.jpeg" alt="María Guadalupe Dzul Uk">
+            </div>
+            <p>María Guadalupe Dzul Uk tiene 56 años y es originaria de Campeche. Llegó a vivir a Calcehtok mientras vendía sombreros, hamacas y dulces tradicionales.</p>
+            <p>Aprendió a elaborar dulces observando a su madre y actualmente cuenta con más de 20 años de experiencia preparando dulces tradicionales.</p>
+            <p>Su especialidad son los dulces de nance y ciruela, que prepara con recetas heredadas de su familia. Hoy es un pilar en la comunidad, enseñando a las nuevas generaciones el valor de preservar estas tradiciones.</p>
+        </div>
+    </div>
+</div>
+<!-- Modal 6: María Leticia -->
+<div id="modalMariaLeticia" class="modal">
+    <div class="modal-contenido">
+        <div class="modal-header">
+            <h3><i class="fas fa-user"></i> María Leticia Aldana Calan</h3>
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="modal-imagen">
+                <img src="img/artesanos/maria-leticia.jpeg" alt="María Leticia Aldana Calan">
+            </div>
+            <p>María Leticia Aldana Calan tiene 45 años de edad, es originaria de Opichén y reside en la localidad de Calcehtok desde hace 29 años.</p>
+            <p>Aprendió la elaboración del dulce de camote desde su infancia; a la edad de 13 años comenzó a colaborar con su abuela en su preparación.</p>
+            <p>Inicialmente, la receta se destinaba exclusivamente al consumo familiar, pero con el tiempo se convirtió también en una fuente de sustento económico para su hogar, conservando así esta tradición.</p>
+        </div>
+    </div>
+</div>
+
+<div id="modalEneyda" class="modal">
+    <div class="modal-contenido">
+        <div class="modal-header">
+            <h3><i class="fas fa-user"></i> Eneyda del Socorro Colonia González</h3>
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="modal-imagen">
+                <img src="img/artesanos/eneyda-colonia.jpeg" alt="Eneyda Colonia">
+            </div>
+            <p>Aprendí a elaborar el dulce de ciruela a los 15 años gracias a mi abuelita paterna, quien me enseñó la receta tradicional de nuestra familia.</p>
+            <p>Comencé a prepararlo para venderlo y, con los años, se convirtió en una tradición que conservo con orgullo. Para mí, este dulce representa nuestras raíces y la importancia de preservar nuestras costumbres.</p>
+            <p>Hoy, con 63 años, sigue elaborando dulces y compartiendo su conocimiento con las nuevas generaciones.</p>
+        </div>
+    </div>
+</div>
+
+<div id="modalMiriam" class="modal">
+    <div class="modal-contenido">
+        <div class="modal-header">
+            <h3><i class="fas fa-user"></i> Miriam Guadalupe Tec Estrella</h3>
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="modal-imagen">
+                <img src="img/artesanos/miriam-tec.jpeg" alt="Miriam Tec">
+            </div>
+            <p>Miriam Guadalupe Tec Estrella tiene 47 años y es originaria de Opichén.</p>
+            <p>Aprendió a elaborar el dulce de ciricote hace 10 años gracias a su mamá, quien le enseñó como lo preparaba su abuela.</p>
+            <p>Esta receta es algo que se elaboraba solo para consumo de su familia, pero hoy la comparte con la comunidad, manteniendo viva una tradición familiar.</p>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

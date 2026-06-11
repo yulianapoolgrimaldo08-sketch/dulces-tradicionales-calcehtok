@@ -1,0 +1,1540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2c1810;
+    background-color: #fef9e8;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header con menú hamburguesa */
+header {
+    background-color: #6B3E1B;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+}
+
+.logo i {
+    font-size: 22px;
+    color: #F1C40F;
+}
+
+.logo h1 {
+    font-size: 0.85rem;
+    line-height: 1.2;
+}
+
+/* Botón de menú hamburguesa */
+.menu-toggle {
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+}
+.menu-toggle:hover,
+.menu-toggle:active {
+    color: #F1C40F;
+}
+
+/* Menú lateral */
+.nav-lateral {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 100vh;
+    background-color: #6B3E1B;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    z-index: 2001;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nav-lateral.active {
+    right: 0;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #F1C40F;
+    margin-bottom: 20px;
+}
+
+.nav-header h3 {
+    color: #F1C40F;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.nav-close {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-close:hover,
+.nav-close:active {
+    color: #F39C12;
+}
+
+.nav-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-lateral ul li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-lateral ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s, padding-left 0.3s;
+}
+
+.nav-lateral ul li a:hover,
+.nav-lateral ul li a:active {
+    background-color: #F39C12;
+    color: #2c1810;
+    padding-left: 30px;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2000;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #F39C12 0%, #E67E22 100%);
+    color: white;
+    padding: 110px 0 60px;
+    margin-top: 0;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Responsive - MÓVIL primero (esto es importante) */
+@media (min-width: 576px) {
+    .logo h1 {
+        font-size: 1rem;
+    }
+    
+    .hero {
+        padding: 120px 0 60px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+    
+    .logo i {
+        font-size: 24px;
+    }
+    
+    header .container {
+        padding: 15px 25px;
+    }
+    
+    .hero {
+        padding: 130px 0 60px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .logo i {
+        font-size: 28px;
+    }
+    
+    header .container {
+        padding: 18px 30px;
+    }
+    
+    .hero {
+        padding: 150px 0 70px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* El resto de tu CSS (grids, tarjetas, etc.) sigue igual desde aquí */
+
+.dulces {
+    padding: 60px 0;
+    background-color: #fef9e8;
+}
+.dulces .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #6B3E1B;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #F39C12;
+}
+
+/* ========== GRIDS DE 4 COLUMNAS ========== */
+.dulces-grid,
+.siembra-grid,
+.seleccion-grid,
+.adaptabilidad-grid,
+.historica-grid,
+.frutas-geo-grid,
+.derechos-grid,
+.artesanos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+@media (min-width: 640px) {
+    .dulces-grid,
+    .siembra-grid,
+    .seleccion-grid,
+    .adaptabilidad-grid,
+    .historica-grid,
+    .frutas-geo-grid,
+    .derechos-grid,
+    .artesanos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .dulces-grid,
+    .siembra-grid,
+    .seleccion-grid,
+    .adaptabilidad-grid,
+    .historica-grid,
+    .frutas-geo-grid,
+    .derechos-grid,
+    .artesanos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ========== TARJETAS DE DULCES ========== */
+.tarjeta {
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-bottom: 4px solid #F1C40F;
+    overflow: hidden;
+    padding-bottom: 25px;
+    min-width: 0;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.tarjeta-imagen {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover .tarjeta-imagen img {
+    transform: scale(1.05);
+}
+
+.tarjeta h3 {
+    color: #6B3E1B;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.maya {
+    color: #F39C12;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    padding: 0 10px;
+}
+
+.maya i {
+    margin-right: 5px;
+    color: #6B3E1B;
+}
+
+.descripcion {
+    color: #555;
+    line-height: 1.5;
+    padding: 0 12px;
+    font-size: 0.9rem;
+}
+
+/* ========== SECCIÓN SIEMBRA ========== */
+.siembra {
+    padding: 60px 0;
+    background-color: #FFF8E7;
+}
+.siembra .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.siembra-card {
+    background: white;
+    border-radius: 15px;
+    padding: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-left: 5px solid #27AE60;
+    transition: transform 0.3s;
+    overflow: hidden;
+    padding-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.siembra-card:hover {
+    transform: translateY(-3px);
+}
+
+.siembra-imagen {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.siembra-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.siembra-card:hover .siembra-imagen img {
+    transform: scale(1.05);
+}
+
+.siembra-card h3 {
+    color: #6B3E1B;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.siembra-card h3 i {
+    color: #27AE60;
+}
+
+.siembra-info {
+    padding: 0 15px;
+    flex: 1;
+}
+
+.siembra-info p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.siembra-info strong {
+    color: #E67E22;
+}
+
+/* ========== SECCIÓN SELECCIÓN NATURAL ========== */
+.seleccion-natural {
+    padding: 60px 0;
+    background-color: #FFF3E0;
+}
+
+.seleccion-natural .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.seleccion-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid #F39C12;
+    transition: transform 0.3s;
+}
+
+.seleccion-card:hover {
+    transform: translateY(-5px);
+}
+
+.seleccion-card h3 {
+    color: #6B3E1B;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.seleccion-card h3 i {
+    color: #F39C12;
+}
+
+.seleccion-card p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ========== SECCIÓN ADAPTABILIDAD ========== */
+.adaptabilidad {
+    padding: 60px 0;
+    background-color: #E8F5E9;
+}
+
+.adaptabilidad .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.adaptabilidad-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid #27AE60;
+    transition: transform 0.3s;
+}
+
+.adaptabilidad-card:hover {
+    transform: translateY(-5px);
+}
+
+.adaptabilidad-card h3 {
+    color: #6B3E1B;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.adaptabilidad-card h3 i {
+    color: #27AE60;
+}
+
+.adaptabilidad-card p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ========== SECCIÓN COMPRENSIÓN HISTÓRICA ========== */
+.comprension-historica {
+    padding: 60px 0;
+    background-color: #FFF8E7;
+}
+
+.comprension-historica .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.historica-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid #6B3E1B;
+    transition: transform 0.3s;
+}
+
+.historica-card:hover {
+    transform: translateY(-5px);
+}
+
+.historica-card h3 {
+    color: #6B3E1B;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.historica-card h3 i {
+    color: #6B3E1B;
+}
+
+.historica-card p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ========== FRUTAS Y GEOGRAFÍA ========== */
+.fruta-geo-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border-left: 4px solid #F39C12;
+}
+
+.fruta-geo-card:hover {
+    transform: translateY(-3px);
+}
+
+.fruta-geo-card h3 {
+    color: #6B3E1B;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fruta-geo-card h3 i {
+    color: #F39C12;
+}
+
+.fruta-geo-card p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.relacion-geografia {
+    background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.relacion-geografia h3 {
+    color: #6B3E1B;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.relacion-geografia h3 i {
+    color: #F39C12;
+}
+
+.relacion-geografia p {
+    color: #2c1810;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* ========== SECCIONES DE TEXTO ========== */
+.infografia {
+    padding: 60px 0;
+    background-color: #fef9e8;
+}
+
+.infografia-contenido {
+    max-width: 100%;
+    text-align: center;
+}
+
+.infografia-contenido img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.tecnologia {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+}
+
+.tecnologia-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-left: 5px solid #2196F3;
+    border-right: 5px solid #2196F3;
+}
+
+.tecnologia-contenido p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #2c1810;
+    margin: 0;
+}
+
+.trabajo-equipo {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+}
+
+.trabajo-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-top: 5px solid #FF9800;
+    border-bottom: 5px solid #FF9800;
+}
+
+.trabajo-contenido p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #2c1810;
+    margin: 0;
+}
+
+.impacto-internet {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #E8EAF6 0%, #C5CAE9 100%);
+}
+
+.impacto-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-left: 5px solid #3F51B5;
+    border-right: 5px solid #3F51B5;
+}
+
+.impacto-contenido p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #2c1810;
+    margin: 0;
+}
+
+.compromiso {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #FCE4EC 0%, #F8BBD0 100%);
+}
+
+.compromiso-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-top: 5px solid #E91E63;
+    border-bottom: 5px solid #E91E63;
+}
+
+.compromiso-contenido p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #2c1810;
+    margin: 0;
+}
+
+.desarrollo-sustentable {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+}
+
+.sustentable-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-left: 5px solid #4CAF50;
+    border-right: 5px solid #4CAF50;
+}
+
+.sustentable-contenido p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #2c1810;
+    margin: 0;
+}
+
+.consumo-responsable {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+}
+
+.consumo-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-top: 5px solid #FFC107;
+    border-bottom: 5px solid #FFC107;
+}
+
+.consumo-contenido p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #2c1810;
+    margin: 0;
+}
+
+.analisis-recursos {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #EFEBE9 0%, #D7CCC8 100%);
+}
+
+.analisis-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-left: 5px solid #795548;
+    border-right: 5px solid #795548;
+}
+
+.analisis-contenido p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #2c1810;
+    margin: 0;
+}
+
+.aplicacion-conocimientos {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%);
+}
+
+.aplicacion-conocimientos .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.historia {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
+    color: white;
+}
+
+.historia .section-title {
+    color: white;
+}
+
+.historia .section-title::after {
+    background-color: #F1C40F;
+}
+
+.historia-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    padding: 30px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.historia-content p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.historia-content p:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #3E2723;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-info i {
+    color: #F39C12;
+    margin-right: 8px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+/* ========== DERECHOS DE ARTESANOS ========== */ 
+.derechos-artesanos {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #6B3E1B 0%, #8B5A2B 100%);
+}
+
+.derechos-artesanos .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.derechos-artesanos .section-title {
+    color: white;
+}
+
+.derechos-artesanos .section-title::after {
+    background-color: #F1C40F;
+}
+
+.derecho-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.derecho-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.derecho-imagen {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.derecho-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.derecho-card:hover .derecho-imagen img {
+    transform: scale(1.05);
+}
+
+.derecho-contenido {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.derecho-contenido i {
+    font-size: 40px;
+    color: #F39C12;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.derecho-contenido p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #2c1810;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ========== ARTESANOS ========== */
+.artesanos {
+    padding: 60px 0;
+    background-color: #FFF8E7;
+}
+
+.artesanos .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.artesano-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.artesano-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.artesano-imagen {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.artesano-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.artesano-card:hover .artesano-imagen img {
+    transform: scale(1.05);
+}
+
+.artesano-info {
+    padding: 20px;
+}
+
+.artesano-info h3 {
+    color: #6B3E1B;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.artesano-edad {
+    color: #F39C12;
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.artesano-info p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* ========== PATRIMONIO CULTURAL ========== */
+.patrimonio-cultural {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
+    color: white;
+}
+
+.patrimonio-cultural .section-title {
+    color: white;
+}
+
+.patrimonio-cultural .section-title::after {
+    background-color: #F1C40F;
+}
+
+.patrimonio-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.patrimonio-contenido p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* ========== MODALES ========== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-contenido {
+    background: white;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    animation: slideIn 0.3s ease;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #6B3E1B, #8B5A2B);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-header h3 i {
+    color: #F1C40F;
+}
+
+.modal-close {
+    font-size: 28px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    transform: scale(1.1);
+    color: #F1C40F;
+}
+
+.modal-body {
+    padding: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.modal-body p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #2c1810;
+    font-size: 0.95rem;
+}
+
+.modal-body p:last-child {
+    margin-bottom: 0;
+}
+
+.modal-imagen {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ajustes extra para móvil */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .tarjeta h3,
+    .siembra-card h3,
+    .seleccion-card h3,
+    .adaptabilidad-card h3,
+    .historica-card h3,
+    .fruta-geo-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .tarjeta-imagen,
+    .siembra-imagen {
+        height: 160px;
+    }
+    
+    .artesano-imagen {
+        height: 180px;
+    }
+    
+    .derecho-imagen {
+        height: 160px;
+    }
+    
+    .modal-header h3 {
+        font-size: 1rem;
+    }
+    
+    .modal-imagen {
+        height: 140px;
+    }
+}
+/* ========== CONSUMO RESPONSABLE VS CONSUMISMO ========== */
+.consumo-responsable {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+}
+
+.consumo-responsable .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.seccion-subtitulo {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #E67E22;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.consumo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.consumo-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.consumo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.consumo-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsable .consumo-icon {
+    background: linear-gradient(135deg, #27AE60, #2ECC71);
+}
+
+.consumismo .consumo-icon {
+    background: linear-gradient(135deg, #E74C3C, #C0392B);
+}
+
+.consumo-icon i {
+    font-size: 40px;
+    color: white;
+}
+
+.consumo-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.responsable h3 {
+    color: #27AE60;
+}
+
+.consumismo h3 {
+    color: #E74C3C;
+}
+
+.consumo-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.consumo-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .consumo-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .seccion-subtitulo {
+        font-size: 0.9rem;
+        margin-top: -20px;
+        margin-bottom: 25px;
+    }
+    
+    .consumo-card {
+        padding: 20px;
+    }
+    
+    .consumo-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .consumo-icon i {
+        font-size: 30px;
+    }
+    
+    .consumo-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .consumo-card p {
+        font-size: 0.9rem;
+    }
+}
+/* Botón de receta */
+.btn-receta {
+    background: linear-gradient(135deg, #F39C12, #E67E22);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-receta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(243,156,18,0.4);
+}
+
+.btn-receta i {
+    margin-right: 5px;
+}
+
+/* Modal de receta */
+.modal-receta {
+    max-width: 550px;
+}
+
+.receta-ingredientes, .receta-preparacion {
+    margin-bottom: 20px;
+}
+
+.receta-ingredientes h4, .receta-preparacion h4 {
+    color: #6B3E1B;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.receta-ingredientes h4 i, .receta-preparacion h4 i {
+    color: #F39C12;
+}
+
+.receta-ingredientes ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.receta-ingredientes ul li {
+    padding: 5px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.receta-ingredientes ul li::before {
+    content: '•';
+    color: #F39C12;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 5px;
+}
+
+.receta-preparacion ol {
+    padding-left: 20px;
+}
+
+.receta-preparacion ol li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+/* Modal para fotos - imagen grande */
+.modal-foto {
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-contenido-foto {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+}
+
+.modal-contenido-foto img {
+    width: 100%;
+    height: auto;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.modal-close-foto {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.modal-close-foto:hover {
+    transform: scale(1.1);
+    color: #F39C12;
+}
+
+/* Hacer que la imagen tenga cursor pointer */
+.tarjeta-imagen {
+    cursor: pointer;
+}
+/* ========== TABLA Y GRÁFICA ========== */
+.tabla-grafica {
+    padding: 60px 0;
+    background-color: #fef9e8;
+}
+
+.tabla-container {
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+    overflow-x: auto;
+}
+
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tabla-datos thead tr {
+    background: linear-gradient(135deg, #6B3E1B, #8B5A2B);
+    color: white;
+}
+
+.tabla-datos th,
+.tabla-datos td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-datos tbody tr:hover {
+    background-color: #FFF3E0;
+}
+
+.tabla-datos tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.grafica-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grafica-titulo h3 {
+    color: #6B3E1B;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.grafica-imagen {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.grafica-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tabla-datos th,
+    .tabla-datos td {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .grafica-titulo h3 {
+        font-size: 1.1rem;
+    }
+    
+    .grafica-imagen {
+        padding: 15px;
+    }
+}
